@@ -1,0 +1,81 @@
+\documentclass[a4paper]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{quattrocento}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage[table, dvipsnames]{xcolor}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[paper=a4paper,top=2cm,bottom=1cm,right=1cm,left=1cm]{geometry}
+
+\newcommand{\mhz}[1]{\si{\num{#1}\ \mega\hertz}}
+
+\begin{document}
+	\thispagestyle{empty}
+	\noindent
+	\centering
+	\begin{minipage}[t]{.4\textwidth}
+		\raggedright
+	\begin{table}[H]
+		\def\arraystretch{2}
+		\begin{tabular}{l l l l}
+			SDR & Standard & Module & Frequency \\ \hline
+			&          & PC66   & \mhz{66}  \\
+			&          & PC100  & \mhz{100} \\
+			&          & PC133  & \mhz{133} \\ \hline
+			
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]
+		\def\arraystretch{2}
+		\begin{tabular}{l l l l}
+			DDR & Standard         & Module          & Frequency \\ \hline
+			& DDR-200          & PC1600          & \mhz{200} \\
+			& DDR-266          & PC2100          & \mhz{266} \\
+			& \textit{DDR-300} & \textit{PC2400} & \mhz{300} \\
+			& DDR-333          & PC2700          & \mhz{333} \\
+			& DDR-400          & PC3200          & \mhz{400} \\
+			& \textit{DDR-433} & \textit{PC3500} & \mhz{433} \\
+			& \textit{DDR-466} & \textit{PC3700} & \mhz{466} \\
+			& \textit{DDR-500} & \textit{PC4000} & \mhz{500} \\
+			& \textit{DDR-550} & \textit{PC4400} & \mhz{550} \\
+			& \textit{DDR-600} & \textit{PC4800} & \mhz{600} \\ \hline
+		\end{tabular}
+	\end{table}
+	\end{minipage}% <--- do not remove
+	\begin{minipage}[t]{.4\textwidth}
+		\raggedleft
+		\begin{table}[H]
+			\def\arraystretch{2}
+			\begin{tabular}{l l l l}
+				DDR2 & Standard         & Module          & Frequency \\ \hline
+				& DDR2-400 & PC2-3200 & \mhz{400} \\
+				& DDR2-533 & PC2-4200 & \mhz{533} \\
+				&  & \textit{PC2-4300} & \mhz{533} \\
+				& DDR2-667 & PC2-5300 & \mhz{667} \\
+				& & \textit{PC2-5400} & \mhz{667} \\
+				& DDR2-800 & PC2-6400 & \mhz{800} \\
+				& DDR2-1066 & PC2-8500 & \mhz{1066} \\
+				& & \textit{PC2-8600} & \mhz{1066} \\
+				\hline
+			\end{tabular}
+		\end{table}
+	
+		\begin{table}[H]
+			\def\arraystretch{2}
+			\begin{tabular}{l l l l}
+				DDR3 & Standard         & Module          & Frequency \\ \hline
+				& DDR3-800 & PC3-6400 & \mhz{800} \\
+				& DDR3-1066 & PC3-8500 & \mhz{1066} \\
+				& DDR3-1333 & PC3-10600 & \mhz{1333} \\
+				& DDR3-1600 & PC3-12800 & \mhz{1600} \\
+				& DDR3-1866 & PC3-14900 & \mhz{1866} \\
+				& DDR3-2133 & PC3-17000 & \mhz{2133} \\
+				\hline
+			\end{tabular}
+		\end{table}
+	\end{minipage}
+\end{document}
